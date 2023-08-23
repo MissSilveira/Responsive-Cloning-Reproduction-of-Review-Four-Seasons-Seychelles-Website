@@ -1,0 +1,407 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    font-family:'Roboto Condensed', sans-serif;
+}
+
+html{
+    font-size: 10px;
+}
+
+::selection{
+    color: white;
+    background-color: rgb(250, 197, 22);
+}
+.inicial{
+    background-image: url(../img/pexels-adam-grabek-784849.jpg);
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 5% 7%;
+    justify-content: end;
+    border-bottom: 3px solid white;
+}
+
+.inicial h1{
+    color: white;
+    font-size: 8em;
+    font-weight: 300;
+}
+
+.icon-inicial{
+    display: flex;
+    gap: 5px;
+}
+
+.icon-inicial a img{
+    width: 30px;   
+    height: 30px;
+}
+
+.slider-container{
+    background-color: rgb(250, 197, 22);
+    display: flex;
+    padding: 2%;
+}
+
+.slider-container button{
+    border: none;
+    background: none;
+}
+
+.slider{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.slider h3{
+    font-size: 4em;
+    font-weight: 100;
+    display: inline;
+    width: 20%;
+}
+
+.slider p{
+    font-size: 2em;
+    font-weight: 100;
+    display: inline;
+    width: 20%;
+    line-height: 1.5em;
+}
+
+.slider img{
+    width: 40%;
+    height: 350px;
+}
+
+.booking{
+    display: flex;
+    align-items: center;
+    padding: 10% 5%;
+    gap: 50px;
+}
+
+.booking img{
+    width: 45%;
+}
+
+.booking article{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.booking article h3{
+    font-size: 5em;
+    font-weight: 100;
+}
+
+.booking article p{
+    font-size: 1.8em;
+    line-height: 1.6em;
+}
+
+.booking article a{
+    display: inline;
+    width:fit-content;
+    padding: 1% 0;
+    font-size: 2em;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-bottom: 2px solid black;
+    color: black;
+}
+
+.review{
+    background: rgb(226, 226, 226);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2% 0;
+    text-align: center;
+    gap: 25px;
+}
+
+.review h3{
+    font-size: 3.5em;
+}
+
+.review p{
+    font-size: 1.6em;   
+}
+
+.img-review{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    
+}
+
+.img-review img{
+    width: 23%;
+    height: 350px;
+    object-fit: cover;
+}
+
+.color-box{
+    width: 100%;
+    display: flex;
+}
+
+.color-box article{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 8% 2%;
+    text-align: center;
+    gap: 25px;
+}
+
+.color-box article h4{
+    font-size: 2.5em;
+}
+
+.color-box article h3{
+    font-size: 3em;
+}
+
+.color-box article p{
+    font-size: 1.6em;
+    line-height: 1.6em;
+}
+
+.color-box article a{
+    font-size: 1.8em;
+    padding: 1%;
+    color: white;
+    text-transform: uppercase;
+    border-bottom: 2px solid white;
+    text-decoration: none;
+}
+
+.color-box .box-1{
+    background-color: rgb(228, 186, 2);
+}
+
+.color-box .box-2{
+    background-color: rgb(85, 175, 163);
+    color: white;
+}
+
+.color-box .box-2 a{
+    color: rgb(0, 0, 0);
+    border-bottom: 2px solid black;
+}
+
+.color-box .box-3{
+    background-color: rgb(27, 70, 50);
+    color: white;
+}
+
+.dining{
+    background-image: url(../img/pexels-konstantin-mishchenko-9348211.jpg);
+    background-size: cover;
+    display: flex;
+    padding: 5%;
+    gap: 40px;
+}
+
+.dining .map{
+    width: 50%;
+}
+
+.dining .map iframe{
+    width: 100%;
+}
+
+.dining .info{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    width: 50%;
+}
+
+.dining .info h2{
+    font-size: 8em;
+    font-weight: 100;
+    color: white;
+}
+
+.dining .info p{
+    font-size: 1.8em;
+    line-height: 1.8em;
+}
+
+
+.dining .info a{
+    font-size: 1.8em;
+    line-height: 1.8em;
+    font-weight: 500;
+    color: black;
+    padding: 1%;
+    width:fit-content;
+    border-bottom: 2px solid black;
+    text-decoration: none;
+}
+
+footer{
+    background-color: rgb(123, 161, 123);
+    padding: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+}
+
+footer h3{
+    font-size: 4em;
+    line-height: 1.8em;
+}
+
+@media screen and (max-width:1000px){
+    .slider{
+        flex-direction: column;
+        padding: 5%;
+        gap: 20px;
+    }
+
+    .slider h3{
+        width: 100%;
+    }
+
+    .slider p{
+        font-size: 2em;
+        font-weight: 100;
+        display: inline;
+        width: 100%;
+        line-height: 1.5em;
+    }
+
+    .slider img{
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .booking{
+        flex-direction: column;
+    }
+    
+    .booking img{
+        width: 100%;
+    }
+
+    .img-review{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 20px;
+        
+    }
+    
+    .img-review img{
+        width: 48%;
+    }
+
+    .dining{
+        flex-direction: column;
+    }
+    
+    .dining .map{
+        width: 100%;
+    }
+    
+    .dining .info{
+        width: 100%;
+    }    
+}
+
+@media screen and (max-width:767px){
+    .inicial h1{
+        font-size: 4em;
+    }
+    
+    .slider{
+        flex-direction: column;
+        padding: 3%;
+        gap: 20px;
+    }
+
+    .slider h3{
+        font-size: 2.5em;
+    }
+
+    .slider p{
+        font-size: 1.4em;
+    }
+
+    .booking article h3{
+        font-size: 2.5em;
+    }
+    
+    .booking article p{
+        font-size: 1.4em;
+    }
+
+    .img-review img{
+        width: 100%;
+    }
+
+    .color-box{
+        flex-direction: column;
+    }
+        
+    .color-box article h4{
+        font-size: 2em;
+    }
+    
+    .color-box article h3{
+        font-size: 2.5em;
+    }
+    
+    .color-box article p{
+        font-size: 1.4em;
+    }
+    
+    .color-box article a{
+        font-size: 1.4em;
+    }
+
+    .dining .map iframe{
+        height: 30vh;
+    }
+    
+    .dining .info{
+        gap: 20px;
+    }
+
+    .dining .info h2{
+        font-size: 2.5em;
+    }
+    
+    .dining .info p{
+        font-size: 1.4em;
+    }
+
+    .dining .info a{
+        font-size: 1.4em;
+    }
+
+    footer h3{
+        font-size: 3em;
+        line-height: 1.8em;
+    }
+}
+
